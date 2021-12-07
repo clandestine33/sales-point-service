@@ -13,7 +13,7 @@ const bucket = process.env.BUCKET
 const s3 = new AWS.S3({
   accessKeyId: process.env.KEY_ID,
   secretAccessKey: process.env.SECRET,
-  region: process.env.region
+  region: 'us-east-2'
 })
 
 GenerateCode = (num) => {
@@ -46,7 +46,7 @@ const mailSender = async (to, subject, text, html) => {
       "Messages": [
         {
           "From": {
-            "Email": "sebastianlogan520@gmail.com",
+            "Email": "fafoworatobi25@gmail.com",
             "Name": "Admin"
           },
           "To": [
