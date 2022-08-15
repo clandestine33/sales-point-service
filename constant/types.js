@@ -20,6 +20,8 @@ const MSG_TYPES = Object.freeze({
     SERVER_ERROR: "Server Error!",
     INVALID_PASSWORD: "Invalid Password",
     SENT: "Email Sent",
+    SESSION_EXPIRED: "Session Expired",
+    ACCESS_DENIED:"Access denied",
     DOCUMENT_REQUIRED:"Documents/images are required"
 });
   
