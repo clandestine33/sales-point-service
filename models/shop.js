@@ -17,10 +17,6 @@ const assestSchema = new mongoose.Schema({
     fieldName:{ 
         type: String, 
         required: true
-    },
-    default: {
-        type: Boolean,
-        default: false
     }
 })
 

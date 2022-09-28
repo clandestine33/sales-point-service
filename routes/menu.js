@@ -15,7 +15,7 @@ router.get("/:menuId", controller.menu.getMenu);
 
 router.post("/", Auth, controller.menu.createMenu);
 
-router.patch("/upload-file/:menuId", Auth, uploadS3.single('image'),controller.menu.uploadFile);
+// router.patch("/upload-file/:menuId", Auth, uploadS3.single('image'),controller.menu.uploadFile);
 
 router.patch("/:menuId", Auth, controller.menu.updateMenu);
 

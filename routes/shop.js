@@ -11,11 +11,11 @@ router.get("/:shopId", Auth, controller.shop.getShop);
 
 router.post("/", Auth, controller.shop.createShop);
 
-router.patch("/file-upload/:shopId", Auth, uploadS3.fields([
-    { name: 'document', maxcount: 2 },
-    { name: 'image', maxcount: 2 },
-    { name: 'logo', maxcount: 1 }
-]), controller.shop.uploadImage);
+// router.patch("/file-upload/:shopId", Auth, uploadS3.fields([
+//     { name: 'document', maxcount: 2 },
+//     { name: 'image', maxcount: 2 },
+//     { name: 'logo', maxcount: 1 }
+// ]), controller.shop.uploadImage);
 
 router.patch("/:shopId", Auth, controller.shop.updateShop);
 
