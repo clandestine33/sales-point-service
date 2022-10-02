@@ -8,6 +8,8 @@ function validateShop(body){
         description: Joi.string().required(),
         address: Joi.string().required(),
         postCode: Joi.string().required(),
+        certificates: Joi.array().required(),
+        logo: Joi.object().required()
     });
 
     return shopSchema.validate(body)

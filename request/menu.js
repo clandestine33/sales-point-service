@@ -10,6 +10,7 @@ function validateMenu(body){
         ingredients: Joi.array().required(),
         category: Joi.string().regex(/^[0-9a-fA-F]{24}$/).required(),
         price: Joi.number().min(0).required(),
+        image: Joi.object().required()
     });
 
     return menuSchema.validate(body)

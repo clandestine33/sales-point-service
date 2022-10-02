@@ -50,7 +50,8 @@ const shopSchema = new mongoose.Schema(
             type: Boolean,
             required: true,
             default: false
-        }
+        },
+        logo: assestSchema
     },
     {
         timestamps: true,
